@@ -24,9 +24,9 @@
     "zone.js": "^0.7.7"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
+    "@types/core-js": "0.9.35",
     "@types/jasmine": "^2.5.45",
-    "@types/node": "^7.0.5",
+    "@types/node": "7.0.5",
     "concurrently": "^3.3.0",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
