@@ -1,9 +1,0 @@
-.link-outlet {
-    margin-top: 50px;
-    height: -moz-calc(90%-100px);
-    height: -webkit-calc(90%-100px);
-    height: calc(90%-100px);
-}
-.sidebar-panel {
-    border: 3px solid #00F;
-}
