@@ -40,3 +40,13 @@ body {
     font-size: 16px;
 
 }
+
+.submit-buttons button {
+    margin: 0 15px;
+}
+
+.form-signin div {
+    padding: 5px;
+}
+
+
