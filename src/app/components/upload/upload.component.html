@@ -1,0 +1,42 @@
+<div class="container">
+    <form novalidate [formGroup]="uploadForm" (ngSubmit)="onSubmit(uploadForm)" class="form-upload">
+
+        <div class="error" *ngIf="!!message">
+            {{message}}
+        </div>
+
+        <h2 class="form-upload-heading"> Please upload a document</h2>
+
+        <label><span> Name </span></label>
+        <div class="form-group">
+            <input type="text" formControlName="filename" class="form-control" placeholder="enter the filename to upload" />
+        </div>
+        <div class="error" *ngIf="uploadForm.get('filename').touched && uploadForm.get('filename').hasError('required')">
+            Filename is required
+        </div>
+
+        <label><span> Category</span></label>
+        <div class="form-group">
+          <select name="category" formControlName="category" class="form-control">
+            <option>Grocery</option>
+            <option>Bills</option>
+            <option>Education</option>
+            <option>Tax</option>
+          </select>
+        </div>
+
+        <label><span>Short Description</span></label>
+        <div class="form-group">
+          <input type="text" formControlName="description" class="form-control" />
+        </div>
+
+        <label><span>File to upload</span></label>
+        <div class="form-group">
+          <input type="file" formControlName="file" id="file" class="input-file" (onChange)="fileChange($event)" accept=".pdf,.doc,.docx,.png,.img" />
+        </div>
+
+        <div class="submit-button">
+          <button [disabled]="!uploadForm.valid" class="btn btn-lg btn-primary" type="submit">Upload</button>
+        </div>
+    </form>
+</div>

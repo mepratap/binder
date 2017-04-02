@@ -7,5 +7,7 @@
         "**/**.js": true,
         "**/**.map": true,
         "**/.DS_Store": true
-    }
+    },
+    "editor.tabSize": 4,
+    "editor.wrappingIndent": "indent"
 }
